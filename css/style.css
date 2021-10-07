@@ -1982,7 +1982,7 @@ header .main_header .header_right_details .header_search {
 }
 
 .advantages_section .main_section .ad_card lord-icon::after {
-  background-image: url(../../images/blue_str.png);
+  background-image: url(../images/blue_str.png);
   width: 35px;
   height: 15px;
   position: absolute;
