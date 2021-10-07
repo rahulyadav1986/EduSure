@@ -1,0 +1,89 @@
+.ins_section{
+    width: 100%;
+    background-color: #f9f3e7;
+    .main_section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 82px;
+        margin-top: 245px;
+        .ins_item{
+            width: 100%;
+            background-color: var(--white-color);
+            padding: 287px 0 50px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: rgba(147,145,145,.2) 1px 0 40px;
+            img{
+                width: 316px;
+                height: 393px;
+                object-fit: cover;
+                position: absolute;
+                top: -150px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border-radius: 10px;
+            }
+            h3{
+                font-size: 26px;
+                font-weight: 600;
+                margin-bottom: 35px;
+            }
+            p{
+                font-size: 15px;
+                width: 70%;
+                display: inline-block;
+            }
+          
+            .all_button{
+                margin-top: 34px;
+                a{
+                    width: 152px;
+                    height: 59px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:669px){
+    .ins_section {
+        .main_section {
+            grid-template-columns: repeat(1, 1fr);
+            .ins_item{
+                margin-bottom: 160px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .ins_section {
+        .main_section{
+            margin-top: 213px;
+            .ins_item {
+                padding: 172px 0 50px;
+                margin-bottom: 126px;
+                img{
+                    width: 200px;
+                    height: 280px;
+                }
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 21px;
+                }
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

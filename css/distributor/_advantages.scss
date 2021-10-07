@@ -1,0 +1,107 @@
+.advantages_section{
+    width: 100%;
+    .main_section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 82px;
+
+        .ad_card{
+            width: 100%;
+            height: 161px;
+            border-radius: 10px;
+            background-color: var(--white-color);
+            box-shadow: rgba(147,145,145,.2) 1px 0 40px;
+            padding-left: 33px;
+            lord-icon{
+                width: 78px;
+                height: 78px;
+                position: relative;
+                overflow: visible;
+                margin-right: 22px;
+                &::before{
+                    background-image: url(../images/yel_str.png);
+                    width: 35px;
+                    height: 15px;
+                    position: absolute;
+                    right: 0;
+                    top: -7px;
+                    content: "";
+                }
+                &::after{
+                    background-image: url(../../images/blue_str.png);
+                    width: 35px;
+                    height: 15px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: "";
+                }
+            }
+            h3{
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1279px){
+    .advantages_section {
+        .main_section{
+            grid-gap: 50px;
+            .ad_card {
+                h3{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .advantages_section {
+        .main_section{
+            grid-gap: 82px;
+            grid-template-columns: repeat(2, 1fr);
+            .ad_card {
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:669px){
+    .advantages_section {
+        .main_section{
+            grid-gap: 50px;
+            grid-template-columns: repeat(1, 1fr);
+            .ad_card {
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:380px){
+    .advantages_section {
+        .main_section{
+            grid-gap: 50px;
+            .ad_card {
+                lord-icon{
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 15px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

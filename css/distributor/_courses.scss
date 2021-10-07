@@ -1,0 +1,117 @@
+.courses_section{
+    width: 100%;
+    .main_course_section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 82px;
+        .course_item{
+            width: 100%;
+            background-color: var(--white-color);
+            height: 461px;
+            padding: 143px 38px 0 38px;
+            border-radius: 10px;
+            box-shadow: rgba(147,145,145,.2) 1px 0 40px;
+            text-align: center;
+            position: relative;
+            margin-top: 90px;
+            .icon_back{
+                width: 155px;
+                height: 155px;
+                background-color: #f7f7f7;
+                border-radius: 100%;
+                position: absolute;
+                top: -79px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                lord-icon{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            h3{
+                font-size: 24.5px;
+                font-weight: 600;
+                margin-bottom: 28px;
+            }
+            p{
+                font-size: 14.18px;
+                line-height: 22px;
+            }
+            .all_button{
+                margin-top: 38px;
+                margin-bottom: 28px;
+                a{
+                    width: 152px;
+                    height: 59px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                }
+            }
+            h4{
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1279px){
+    .courses_section {
+        .main_course_section{
+            grid-gap: 50px;
+            .course_item {
+                h3{
+                    font-size: 23.5px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:889px){
+    .courses_section {
+        .main_course_section{
+            grid-gap: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            .course_item {
+                h3{
+                    font-size: 23.5px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:669px){
+    .courses_section {
+        .main_course_section{
+            grid-gap: 50px;
+            grid-template-columns: repeat(1, 1fr);
+            .course_item {
+                h3{
+                    font-size: 23.5px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:380px){
+    .courses_section {
+        .main_course_section{
+            
+            .course_item {
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+}

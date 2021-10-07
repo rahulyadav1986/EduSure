@@ -1,0 +1,113 @@
+.demo_class_section{
+    width: 100%;
+    background-color: #f7f7f7;
+    .main_video_section{
+        .owl-stage-outer{
+            padding: 100px 0;
+        }
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            height: 45px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                background-color: var(--primary-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                
+            }
+        }
+        .swiper-slide-active{
+            .video_item{
+                padding-top: 50px;
+                padding-left: 40px;
+                padding-right: 40px;
+                
+                .top{
+                    justify-content: space-between;
+                    height: auto;
+                    
+                    h3{
+                        display: block;
+                    }
+                    
+                }
+                p{
+                    display: block;
+                }
+            }
+        }
+        .video_item{
+            width: 100%;            
+            height: 278px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            &::before{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(51,51,51,.9);
+                content: "";
+                z-index: 1;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+            .top{
+                position: relative;
+                z-index: 2;
+
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                img{
+                   
+                    position: relative;
+                    
+                }
+                h3{
+                    font-size: 34px;
+                    color: var(--white-color);
+                    font-weight: 700;
+                    line-height: 40px;
+
+                    display: none;
+                    span{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+            p{
+                position: relative;
+                z-index: 2;
+                color: var(--white-color);
+                margin-top: 15px;
+
+                display: none;
+            }
+        }
+    }
+}
+
+#coverflow-slider .swiper-slide{
+    width: 40% !important;
+}

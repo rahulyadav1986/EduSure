@@ -1,0 +1,104 @@
+.ma_eco_section{
+    width: 100%;
+    background-color: #f3f2f2;
+    &.mailing_list{
+        background-color: #f7f7f7;
+    }
+    .details_back{
+        width: 100%;
+        margin-top: 64px;
+        text-align: center;
+        h4{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .newsletter_section{
+            width: 491px;
+            display: inline-block;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 0 153px 0 0;
+            box-shadow: rgba(191, 190, 190, .3) 1px 0 40px;
+            border: #e7e5e5 1px solid;
+            background-color: var(--white-color);
+            margin-top: 21px;
+            .input{
+                width: 100%;
+                height: 55px;
+                outline-style: none;
+                background-color: transparent;
+                padding: 0 28px;
+                border: none;
+                &::placeholder{
+                    color: var(--dark-color);
+                }
+            }
+            .submit{
+                width: 153px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: none;
+                background-color: var(--primary-color);
+                color: var(--common-color);
+                cursor: pointer;
+                outline-style: none;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .all_button{
+            margin-top: 58px;
+            img{
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .ma_eco_section{
+        .details_back{
+            margin-top: 0;
+            h4{                
+                font-size: 16px;
+            }
+            .all_button{
+                a{
+                    width: 209px;
+                    height: 60px;
+                    font-size: 18px;
+                }
+            }
+            .newsletter_section{
+                width: 100%;
+                background-color: transparent;
+                box-shadow: none;
+                padding-right: 0;
+                .input{
+                    box-shadow: rgba(191, 190, 190, .3) 1px 0 40px;
+                    background-color: var(--white-color);
+                }
+                .submit{
+                    position: relative;
+                    width: 100%;
+                    height: 55px;
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:380px){
+    .ma_eco_section {
+        .details_back {
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.testimonials_section{
+    width: 100%;
+    background-color: var(--grey-color);
+    padding-top: 221px;
+    position: relative;
+    margin-top: -249px;
+    z-index: 1;
+    overflow: hidden;
+    &.inner{
+        margin-top: 0;
+        padding-top: 130px;
+    }
+    &::before{
+        background-image: url(../images/dooted1.png);
+        width: 225px;
+        height: 387px;
+        position: absolute;
+        top: 168px;
+        left: 0;
+        content: "";
+        z-index: -1;
+    }
+    &::after{
+        background-image: url(../images/dooted2.png);
+        width: 211px;
+        height: 387px;
+        position: absolute;
+        bottom: 45px;
+        right: 0;
+        content: "";
+        z-index: -1;
+    }
+    .content_area{
+        width: 100%;
+        padding-left: 153px;
+        padding-right: 84px;
+    }
+    .main_testimonials{
+        width: 100%;
+        display: grid;
+        padding-right: 153px;
+        grid-template-columns: repeat(2, 1fr);
+        .port{
+            width: 100%;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-right: 80px;
+            position: relative;
+            &::before{
+                width: 100%;
+                height: 1px;
+                background-image: url(../images/fade_border1.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+                background-size: cover;
+            }
+            &::after{
+                width: 1px;
+                height: 100%;
+                background-image: url(../images/fade_border2.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: "";
+                background-size: cover;
+            }
+            &:nth-child(2n+2){
+                padding-right: 0;
+                padding-left: 80px;
+                &::after{
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                &::before{
+                    display: none;
+                }
+            }
+            
+            img{
+                width: 68px;
+                height: 68px;
+                border-radius: 100%;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                width: 100%;
+            }
+            .name{
+                color: var(--primary-color);
+                font-size: 12px;
+                letter-spacing: 2px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .testimonials_section {
+        margin-top: -173px;
+        padding-top: 130px;
+        .content_area{
+            padding-left: 0;
+            padding-right: 50px;
+        }
+        .main_testimonials {
+            padding-right: 0;
+            .port{
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .testimonials_section {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .testimonials_section {
+        text-align: center;
+        .content_area{
+            padding-right: 0;
+        }
+        .main_testimonials {
+            .port{
+                padding-right: 24px;
+                padding-left: 24px;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                &:nth-child(2n+2){
+                    padding-right: 24px;
+                    padding-left: 24px;
+                    
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .testimonials_section{
+        padding-top: 40px;
+        &.inner{
+            padding-top: 40px;
+        }
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+        .main_testimonials{
+            grid-template-columns: repeat(1, 1fr);
+            .port{
+                &::before{
+                    display: block !important;
+                }
+                &::after{
+                    display: none !important;
+                }
+                &:last-child{
+                    &::before{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+   

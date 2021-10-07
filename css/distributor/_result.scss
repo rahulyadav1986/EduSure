@@ -1,0 +1,202 @@
+.result_section{
+    width: 100%;
+    background-color: #f7f7f7;
+    .courses_section{
+        width: 100%;
+        position: relative;
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            height: 45px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                background-color: var(--primary-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+        .owl-stage-outer{
+            padding: 50px 0 80px;
+            .owl-item{
+                padding: 0 30px;
+            }
+        }
+        .course_item{
+            width: 100%;
+            border-radius: 5px;
+            background-color: var(--white-color);
+            box-shadow: rgba(1,11,60,.1) 0 30px 40px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 352px;
+                object-fit: cover;
+            }
+            .name_area{
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: capitalize;
+                padding: 15px 0 19px 20px;
+                border-bottom: #dddddd 1px solid;
+                span{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #030303;
+                }
+                lord-icon{
+                    width: 82px;
+                    height: 82px;
+                }
+            }
+            .collage_area{
+                width: 100%;
+                padding: 32px 0 32px 33px;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 16px;
+                color: #295467;
+                text-transform: capitalize;
+                line-height: 21px;
+                position: relative;
+                .youtube_button{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 35px;
+                    margin: auto;
+                    height: 64px;
+                    img{
+                        margin-right: 0;
+                    }
+                }
+                img{
+                    margin-right: 13px;
+                    width: auto;
+                    height: auto;
+                }
+                span{
+                    font-size: 14px;
+                    color: #7e7d7d;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+    }
+    .button_back{
+        width: 100%;
+        .whatsapp{
+            margin-left: 29px;
+            img{
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1279px){
+    .result_section {
+        .courses_section {
+            .owl-stage-outer {
+                .owl-item {
+                    padding: 0 15px 0 15px;
+                }
+            }
+            .course_item{
+                img{
+                    height: 298px;
+                }
+                .name_area {
+                    lord-icon{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    font-size: 16px;
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                .collage_area{
+                    .youtube_button{
+                        height: 30px;
+                        right: 20px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:669px){
+    .result_section{
+        .courses_section{
+            margin-top: 70px;
+            .course_item{
+                img{
+                    height: 355px;
+                }
+                
+                .name_area{
+                    font-size: 18px;
+                }
+            }
+        }
+        .all_button{
+            a{
+                width: 209px;
+                height: 60px;
+                font-size: 18px;
+            }
+        }
+        .button_back{
+            .whatsapp{
+                font-size: 14px;
+                img{
+                    width: 30px;
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:450px){
+    .result_section{
+        .courses_section{
+            margin-top: 43px;
+        }
+        .owl-stage-outer{
+            padding-top: 0 !important;
+            padding-bottom: 57px !important;
+            .owl-item{
+                padding: 0 30px !important;
+            }
+        }
+        .button_back{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .whatsapp {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+        
+    }
+}
