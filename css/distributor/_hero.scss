@@ -82,6 +82,47 @@
     }
 }
 
+.inner_hero{
+    width: 100%;
+    background-color: #ECF5F8;
+    text-align: center;
+    h1{
+        font-size: 50px;
+    }
+    ul{
+        &.breadcrumb{
+            margin-top: 50px;
+            li{
+                color: var(--secondary-color);
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0;
+                    a{
+                        padding-right: 0;
+                    }
+                }
+                a{
+                    color: var(--common-color);
+                    padding-right: 27px;
+                    position: relative;
+                    &::after{
+                        width: 6px;
+                        height: 6px;
+                        background-color: var(--primary-color);
+                        border-radius: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:1399px){
     .hero_back_details {
         .right_avator{

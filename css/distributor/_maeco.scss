@@ -54,6 +54,14 @@
             margin-top: 58px;
             img{
                 margin-right: 14px;
+                transition: all .5s ease-in-out;
+            }
+            a{
+                &:hover{
+                    img{
+                        filter: grayscale(1) invert(1);
+                    }
+                }
             }
         }
     }

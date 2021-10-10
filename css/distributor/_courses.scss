@@ -115,3 +115,120 @@
     }
     
 }
+
+
+.course_single_section{
+    width: 100%;
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+    .main_area{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 82px;
+        margin-bottom: 50px;
+        .left_avator{
+            width: 100%;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+        .right_content_area{
+            width: 100%;
+            h3{
+                font-size: 30px;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+            
+            
+        }
+    }
+    .course_heading{                
+        margin-bottom: 35px;
+        lord-icon{
+            width: 90px;
+            height: 90px;
+            margin-right: 20px;
+            background-color: var(--white-color);
+            box-shadow: 0px 0px 62px 0px rgba(10, 51, 80, .3);
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+            overflow: visible;
+            &::before{
+                width: 16px;
+                height: 16px;
+                background-color: var(--white-color);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: -5px;
+                border-radius: 2px;
+                transform: rotate(-45deg);
+                content: "";
+            }
+        }
+    }
+    .list{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .list{
+        li{
+            margin-bottom: 20px;
+            font-size: 18px;
+            position: relative;
+            border: rgba(0,0,0,.1) 1px solid;
+            padding: 20px 20px 20px 40px;
+            &::before{
+                width: 8px;
+                height: 8px;
+                background-color: var(--common-color);
+                border-radius: 100%;
+                position: absolute;
+                top: 27px;
+                left: 20px;
+                content: "";
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .course_single_section {
+        .main_area{
+            grid-template-columns: repeat(1, 1fr);
+            .left_avator {
+                margin-bottom: 0;
+            }
+        }
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 20px !important;
+        }
+        h4{
+            font-size: 18px;
+        }
+    }
+}

@@ -50,6 +50,8 @@
             }
             p{
                 width: 80%;
+                line-height: 32px;
+                font-size: 16px;
             }
             .button_back{
                 width: 100%;
@@ -71,6 +73,17 @@
                     }
                 }
             }
+        }
+    }
+    .additional_informations{
+        h3{
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 15px;
         }
     }
 }
